@@ -39,7 +39,7 @@ CREATE VIEW task_04
 AS
 	SELECT first_name AS 'First Name', last_name AS 'Surname', actor_id AS 'IDs divisible by 10'
     FROM actor
-    WHERE actor_id/10 = FLOOR(actor_id/10)
+    WHERE actor_id%10=0
 ;
 
 -- TASK FIVE
